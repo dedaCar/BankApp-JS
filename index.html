@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bank App</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h2>Bank App</h2>
+    <button id="accBtn" class="btn btn-primary">Account</button>
+    <button id="addBtn" class="btn btn-info">Add Account</button>
+    <button id="editBtn" class="btn btn-danger">Edit/Delete</button>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div id="accTable" class="col-lg-8 col-lg-offset-2">
+        <h3 class="page-header">Accounts</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <table id="first" class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Deposit</th>
+                  <th>Credit Card</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div id="addAcc" class="col-lg-8 col-lg-offset-2">
+        <h3 class="page-header">Add Accounts</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <input id="inputID" required class="form-control" type="text" placeholder="ID"><br>
+            <input id="inputName" class="form-control" type="text" placeholder="Name"><br>
+            <input id="inputDep" class="form-control" type="text" placeholder="Deposit"><br>
+            <input id="inputCCard" class="form-control" type="text" placeholder="Credit Card"><br>
+            <button id="addAccBtn" class="btn btn-primary form-control">Add Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="editDelete" class="col-lg-8 col-lg-offset-2">
+    <h3 class="page-header">Edit/Delete</h3>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <table id="second" class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Deposit</th>
+              <th>Credit Card</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="editFormTableRow" class="col-lg-8 col-lg-offset-2">
+    <h3 class="page-header">Edit Account</h3>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <input id="editformId" type="text" required class="form-control"><br>
+        <input id="editformName" type="text" class="form-control"><br>
+        <input id="editformDeposit" type="text" class="form-control"><br>
+        <input id="editformCcard" type="text" class="form-control"><br>
+        <button id="editaddFormAccBtn" class="btn btn-success form-control">Edit Account</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
